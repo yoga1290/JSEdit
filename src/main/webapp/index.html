@@ -100,7 +100,7 @@ html
 						var lines = test.input.split('\n');
 						readline = function() {
 							console.log(lines.length);
-							return (lines.length>0) ? lines.splice(0, 1):'';
+							return (lines.length>0) ? lines.splice(0, 1)[0]:'';
 						};
 						print = function() {
 							angular.forEach(arguments, function(arg) {
